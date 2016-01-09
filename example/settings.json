@@ -1,0 +1,14 @@
+{
+  "public": {},
+  "siteName": "Utils Example",
+  "emailDomain": "example.com",
+  "kadira": {
+    "appId": "appId",
+    "appSecret": "appSecret"
+  },
+  "google": {
+    "clientId": "clientId",
+    "secret": "secret",
+    "loginStyle": "popup"
+  }
+}
