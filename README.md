@@ -1,11 +1,9 @@
-# Utilities for Meteor
+# Utilities for Meteor [![Build Status](https://travis-ci.org/fourquet/meteor-package-utils.svg?branch=master)](https://travis-ci.org/fourquet/meteor-package-utils)
 
 Simple utilities for Meteor.
 
 ### Install
 `meteor add fourquet:utils`
-
-[![Build Status](https://travis-ci.org/fourquet/meteor-package-utils.svg?branch=master)](https://travis-ci.org/fourquet/meteor-package-utils)
 
 ### Usage
 
