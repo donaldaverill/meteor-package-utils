@@ -1,6 +1,6 @@
 Package.describe({
   name: 'fourquet:utils',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Utils for Meteor.',
   git: 'https://github.com/fourquet/meteor-package-utils',
   documentation: 'README.md',
@@ -14,7 +14,7 @@ Package.onUse(function(api) {
     'server',
   ]);
   api.addFiles('utils.js', ['client', 'server']);
-  api.addFiles('server.js', ['server']);
+  api.addFiles(['server.js', 'methods.js'], ['server']);
   api.export('Utils');
 });
 

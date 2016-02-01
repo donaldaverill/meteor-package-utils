@@ -45,8 +45,19 @@ Meteor.startup(() => {
 });
 ```
 
+#### Server Methods:
+  * fourquet:isDevEnvironment
+    * Returns `true` if server running in `development` mode. Otherwise returns `false`.
+
+```js
+const isDev = new ReactiveVar(false);
+Meteor.call('isDev', (error, result) => {
+  isDev.set(result);
+});
+```
+
 #### Version
-0.0.1
+0.0.2
 
 #### License
 MIT
