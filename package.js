@@ -1,6 +1,6 @@
 Package.describe({
   name: 'fourquet:utils',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'Utils for Meteor.',
   git: 'https://github.com/fourquet/meteor-package-utils',
   documentation: 'README.md',
@@ -13,6 +13,10 @@ Package.onUse(function(api) {
   api.imply('nooitaf:colors@0.0.2', [
     'server',
   ]);
+  api.use(['templating', 'reactive-var'], ['client'], {
+    weak: true,
+  });
+  api.addFiles('helpers.js', 'client');
   api.addFiles('utils.js', ['client', 'server']);
   api.addFiles(['server.js', 'methods.js'], ['server']);
   api.export('Utils');

@@ -46,7 +46,7 @@ Meteor.startup(() => {
 ```
 
 #### Server Methods:
-  * fourquet:isDevEnvironment
+  * `fourquet:isDevEnvironment`
     * Returns `true` if server running in `development` mode. Otherwise returns `false`.
 
 ```js
@@ -56,8 +56,19 @@ Meteor.call('isDev', (error, result) => {
 });
 ```
 
+
+#### Client Template Helpers:
+  * `isDev`
+    * Returns `true` if server running in `development` mode. Otherwise returns `false`.
+
+```html
+{{#if isDev}}
+  You are in the Development environment!
+{{/if}}
+```
+
 #### Version
-0.0.2
+0.0.3
 
 #### License
 MIT
